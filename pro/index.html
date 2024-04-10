@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- 在這裡插入你的Logo -->
+    <link rel="icon" href="favicon.ico" >
+
+
+    <!---background-->
+    <link rel="stylesheet" href="Video.css">
+    <title>PhotoGraph</title> 
+
+    <style>
+        /*menu* start*/
+        .menu{float: right;}
+        .menu div,.menu div{
+	        float: left;
+        	color:#af9f8c;
+        	font-size: 20px;
+	        line-height: 40px;
+    }
+
+
+    .menu a{padding: 20px 50px;}
+        .menu a:hover{
+	        color:#fff;
+	        background-color:   gray;
+        }
+
+
+                /*作品集頁面選項*/
+        .Portfolio{
+            font-size: 60px;
+            margin:10px;
+            text-decoration: none;
+            background-color:black;
+            transition: background-color 0.6s ease; /*添加過度效果*/
+            border-radius:50%;
+            color:white;
+            font-family: Impact, fantasy	;
+
+
+
+        }
+        .Portfolio:hover{
+            background-color:black
+        /*自介選單*/
+        }
+
+
+        .About{
+            font-size: 60px;
+            margin: 10px;
+            text-decoration: none;
+            background-color:   black;
+            transition:background-color 0.6s ease-in-out;
+            border-radius:50%;
+            color:white;
+            font-family: Impact, fantasy;
+        }
+
+
+        .About:hover {
+        background-color: silver;  
+    }
+
+
+      /*Page2開始*/ 
+        .Page2{
+        width: auto ;
+        height: 1000px ;
+        background-color:silver;
+        }
+
+
+        /*大綱*/
+        .first{
+            position: absolute;
+            top:135%;
+             left:50%;
+        transform:translate(-50%,-50%);
+        font-family:Comic Sans MS, Comic Sans, cursive	;
+        }
+
+        /*第二頁大標set*/
+        .second{
+            font-size:100px;
+            text-align: center;
+
+        }
+
+
+        /*第二頁fb logo set*/
+        .fb{
+            width:35px;
+            
+        }
+
+        /*第二頁IG logo set*/
+        .insta{
+            width: 35px;
+        }
+
+        /*Page3開始*/ 
+        .Page3{
+        width: auto ;
+        height: 1500px ;
+        background-color:whitesmoke;
+        }
+        .PG3{
+            position: absolute;
+            top:282%;
+             left:50%;
+        transform:translate(-50%,-50%);
+        font-family:Comic Sans MS, Comic Sans, cursive		;        
+        }
+        .PG3-1{
+            font-size:100px;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <!----影片開始.-->
+    <video autoplay="autoplay" loop class="fillWidth" muted='muted'>
+        <source src="Video.mp4">
+    </video>
+
+
+    <!---arrow and Logo Start.-->
+    <div class="Logo"><a href=""><img src="LOGO.jpg"></a></div>
+
+
+
+    <!---menu開始.-->
+    <div class="menu">
+        <div>
+            <a href=""class="Portfolio">Portfolio.</a>
+        </div>
+        <div>
+            <a href=""class="About">About.</a>
+        </div>
+    </div>
+
+
+    
+    <!--第二頁開始-->
+    <div class="Page2">
+        <!--大標-->
+        <div class="first">
+            <h2 class="second">About.</h2>
+            <!--文字層start-->
+        </div>
+        <div class="open">
+            <div class="Step0"> I'm currently immersed<br> in the fascinating worlds of <u>photography and programming</u>. From mastering composition to exploring various lighting techniques, my goal is to convey emotions and create visually compelling narratives.</div>
+            <div class="fb"><a href="https://www.facebook.com/profile.php?id=100009148850986&locale=zh_TW"><img src="fb.webp"></a></div>
+            <div class="insta"><a href="https://www.instagram.com/4shinji_/"><img src="insta.webp"/></a></div>
+        </div>
+        </div>
+
+
+
+
+        <!--第三頁開始-->
+        <div class="Page3">
+            <div class="PG3">
+                <div class="PG3-1">Portfolio.</div>
+            </div>
+
+
+
+            
+        </div>
+    
+</body>
+</html>

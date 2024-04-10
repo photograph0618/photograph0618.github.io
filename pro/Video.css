@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+    padding:0;
+
+}
+/*第一頁背景set*/
+.fillWidth{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.About{
+    position:absolute;
+    top:28%;
+    left:30%;
+    transform:translate(-50%,-50%);
+}
+.Portfolio{
+    position:absolute;
+    top:28%;
+    left:70%;
+    transform:translate(-50%,-50%);
+}
+.Logo{
+    position:absolute;
+    top:10%;
+    left:51%;
+    transform:translate(-50%,-50%);
+}
+.Arrow{
+    position:absolute;
+    top:60%;
+    left:47.4%;
+    transform:(-50%,-50%);
+}
+.open{
+    width:700px;
+    height: 800px;
+    transform:translate(110%,35%);
+    background: rgba(255,255,2255,0.1);
+}
+.Step0{
+    font-size:30px;
+   margin: 50px;
+   position:absolute;
+   font-family: Apple Chancery, cursive	;
+   letter-spacing: 3px;
+   text-align: left;
+   padding: 20px;
+   line-height: 1.7;
+}
+      
