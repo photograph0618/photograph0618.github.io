@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- 在這裡插入你的Logo -->
+    <link rel="icon" href="favicon.ico" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+    <!---background-->
+    <link rel="stylesheet" href="Video.css">
+    <title>PhotoGraph</title> 
+
+
+    <style>
+        /*menu* start*/
+        .menu{float: right;}
+        .menu div,.menu div{
+	        float: left;
+        	color:#af9f8c;
+        	font-size: 20px;
+	        line-height: 40px;
+    }
+
+
+    .menu a{padding: 20px 50px;}
+        .menu a:hover{
+	        color:#fff;
+	        background-color:   gray;
+        }
+
+
+                /*作品集頁面選項*/
+        .Portfolio{
+            font-size: 60px;
+            margin:10px;
+            text-decoration: none;
+            background-color:black;
+            transition: background-color 0.6s ease; /*添加過度效果*/
+            border-radius:50%;
+            color:white;
+            font-family: Impact, fantasy	;
+
+
+
+        }
+        .Portfolio:hover{
+            background-color:black
+        /*自介選單*/
+        }
+
+
+        .About{
+            font-size: 60px;
+            margin: 10px;
+            text-decoration: none;
+            background-color:   black;
+            transition:background-color 0.6s ease-in-out;
+            border-radius:50%;
+            color:white;
+            font-family: Impact, fantasy;
+        }
+
+
+        .About:hover {
+        background-color: silver;  
+    }
+
+
+      /*Page2開始*/ 
+        .Page2{
+        width: auto ;
+        height: 1000px ;
+        background-color:whitesmoke;
+
+        }
+		.first{
+			font-size: 100px;
+		}
+		.second{
+			font-size: 10px;
+		}
+
+
+        /*大綱*/
+        .first{
+            position: absolute;
+            top:135%;
+             left:50%;
+        transform:translate(-50%,-50%);
+        font-family:Noto Sans, sans-serif		;
+        }
+
+        /*第二頁大標set*/
+        .second{
+            font-size:100px;
+            text-align: center;
+            font-weight: lighter;
+
+        }
+
+
+        /*第二頁fb logo set*/
+        .fb{
+            width:35px;
+            
+        }
+
+        /*第二頁IG logo set*/
+        .insta{
+            width: 35px;
+        }
+    
+
+        /*Page3開始*/ 
+        .Page3{
+        width: auto ;
+        background-color:whitesmoke;
+        height: 4200px;
+        }
+        .PG3{
+            position: absolute;
+            top:280%;
+             left:50%;
+        transform:translate(-50%,-50%);
+        font-family:Noto Sans, sans-serif		;        
+        }
+        .PG3-1{
+            font-size:100px;
+            text-align: center;
+
+
+        }
+        .logo{
+        top: 220px;
+         position: relative;
+         left:150px;
+         background-color: #ccc;
+         transition: 0.5s;  
+         opacity:1;
+         width: 0;
+        
+        }
+        .logo:hover{
+            opacity: 0.6;
+
+        }   
+        .logo:hover::before{
+        position: absolute;
+        top: -45px;
+        left: 0;
+        color: #fff;
+        font-size: .0.2em;
+        background: black;
+        padding: 5px;
+        border-radius: 5px;
+        content: 'Canon 2024/04/05 *FishMonger*';
+}
+        .pic2{
+        top: -300px;
+         position: relative;
+         left: 870px;
+         background-color: #ccc;
+         transition: 0.5s;  
+         opacity:1;
+         width: 0;
+        
+        }
+        .pic2:hover{
+            opacity: 0.6;
+
+        }   
+        .pic2:hover::before{
+        position: absolute;
+        top: -45px;
+        left: 0;
+        color: #fff;
+        font-size: .0.2em;
+        background: black;
+        padding: 5px;
+        border-radius: 5px;
+        content: 'Canon 2024/04/05 *Tree*';
+}
+    .pic3{
+        top: -350px;
+         position: relative;
+         left: 150px;
+         background-color: #ccc;
+         transition: 0.5s;  
+         opacity:1;
+         width: 0;
+        
+        }
+        .pic3:hover{
+            opacity: 0.6;
+
+        }   
+        .pic3:hover::before{
+        position: absolute;
+        top: -45px;
+        left: 0;
+        color: #fff;
+        font-size: .0.2em;
+        background: black;
+        padding: 5px;
+        border-radius: 5px;
+        content: 'Canon 2024/04/05 *BentoShop*';
+}
+        .pic4{
+        top: -780px;
+         position: relative;
+         left: 870px;
+         background-color: #ccc;
+         transition: 0.5s;  
+         opacity:1;
+         width: 0;
+        
+        }
+        .pic4:hover{
+            opacity: 0.6;
+
+        }   
+        .pic4:hover::before{
+        position: absolute;
+        top: -45px;
+        left: 0;
+        color: #fff;
+        font-size: .0.2em;
+        background: black;
+        padding: 5px;
+        border-radius: 5px;
+        content: 'Canon 2024/04/05 *JhuoshueiRiver*';
+}
+        .pic5{
+        top: -850px;
+         position: relative;
+         left: 150px;
+         background-color: #ccc;
+         transition: 0.5s;  
+         opacity:1;
+         width: 0;
+        
+        }
+        .pic5:hover{
+            opacity: 0.6;
+
+        }   
+        .pic5:hover::before{
+        position: absolute;
+        top: -45px;
+        left: 0;
+        color: #fff;
+        font-size: .0.2em;
+        background: black;
+        padding: 5px;
+        border-radius: 5px;
+        content: 'Canon 2024/04/05 *85SkyTower*';
+}   
+        .pic6{
+        top: -1250px;
+         position: relative;
+         left: 870px;
+         background-color: #ccc;
+         transition: 0.5s;  
+         opacity:1;
+         width: 0;
+        
+        }
+        .pic6:hover{
+            opacity: 0.6;
+
+        }   
+        .pic6:hover::before{
+        position: absolute;
+        top: -45px;
+        left: 0;
+        color: #fff;
+        font-size: .0.2em;
+        background: black;
+        padding: 5px;
+        border-radius: 5px;
+        content: 'Canon 2024/04/05 *Oversee*';
+}
+.pic7{
+        top: -1050px;
+         position: relative;
+         left: 150px;
+         background-color: #ccc;
+         transition: 0.5s;  
+         opacity:1;
+         width: 0;
+        
+        }
+        .pic7:hover{
+            opacity: 0.6;
+
+        }   
+        .pic7:hover::before{
+        position: absolute;
+        top: -45px;
+        left: 0;
+        color: #fff;
+        font-size: .0.2em;
+        background: black;
+        padding: 5px;
+        border-radius: 5px;
+        content: 'Canon 2024/04/05 *Church*';
+}   
+        .pic8{
+        top: -1200px;
+         position: relative;
+         left: 870px;
+         background-color: #ccc;
+         transition: 0.5s;  
+         opacity:1;
+         width: 0;
+        
+        }
+        .pic8:hover{
+            opacity: 0.6;
+
+        }   
+        .pic8:hover::before{
+        position: absolute;
+        top: -45px;
+        left: 0;
+        color: #fff;
+        font-size: .0.2em;
+        background: black;
+        padding: 5px;
+        border-radius: 5px;
+        content: 'Canon 2024/04/05 *Lonely*';
+}
+
+.H{
+    height: 0;
+}
+/* 40px */
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+
+/* 48px */
+.toTop-arrow {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 25px;
+	height: 6px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.42rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+/* 56px */
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+
+
+/*RWD START*/
+   /* 手機屏幕 */
+@media (max-width: 600px) {
+    /*Page1 set*/
+    .fillWidth{
+    width: 100%;
+    height: 450px;
+    background-color:#000
+}
+    .menu {
+        float: none;
+        text-align: center;
+    }
+    .menu a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+   .Logo{
+	max-width: 100%;
+   }
+   .Portfolio{
+	position:absolute;
+    top:20%;
+    left:72%;
+    transform:translate(-50%,-50%);
+   }
+   .About{
+	position:absolute;
+    top:20%;
+    left:23%;
+    transform:translate(-50%,-50%);
+   }
+   .open{
+		position:absolute;
+    top: 135%;
+    left:50%;
+    transform:translate(-50%,-50%);
+	width: 350px;
+    height: 500px;
+	}
+	.Step0{
+        letter-spacing: 0.1em;
+		font-size: 15px;
+	}
+    .Page2{
+		height: 1000px;
+		width: 100%;
+	}
+    /*第二頁大標*/
+    .first{
+        position:absolute;
+    top: 85%;
+    left:51%;
+    transform:translate(-50%,-50%);
+    }
+    .second{
+		font-size: 55px;
+		font-family: 'Courier New', Courier, monospace;
+          /*第三頁大標*/
+	
+	}
+    .PG3{
+		position:absolute;
+    top: 175%;
+    left:55%;
+    transform:translate(-50%,-50%);
+    }
+    .PG3-1{
+        font-size: 55px;
+		font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 0em;
+
+    }
+    
+    .logo{
+        position:absolute;
+    top: 220%;
+    left:12%;
+    transform:translate(-50%,-50%);
+    }
+    .test{
+        width: 300px;
+    
+    }
+.pic2{
+    position:absolute;
+    top: 290%;
+    left:12%;
+    transform:translate(-50%,-50%);
+}
+.test1{
+        width: 300px;
+}
+.pic3{
+    position:absolute;
+    top: 360%;
+    left:12%;
+    transform:translate(-50%,-50%);
+}
+.test2{
+    width: 300px;
+}
+.pic4{
+    position:absolute;
+    top: 430%;
+    left:12%;
+    transform:translate(-50%,-50%);
+}
+.test3{
+    width: 300px;
+}
+.pic5{
+    position:absolute;
+    top: 507%;
+    left:12%;
+    transform:translate(-50%,-50%);
+}
+.test4{
+    width: 300px;
+
+}
+.pic6{
+    position:absolute;
+    top: 575%;
+    left:12%;
+    transform:translate(-50%,-50%);
+}
+.test5{
+    width: 300px;
+}
+.pic7{
+    position:absolute;
+    top:627%;
+    left:12%;
+    transform:translate(-50%,-50%);
+
+}
+.test6{
+    width: 300px;
+}
+.pic8{
+    position:absolute;
+    top: 677%;
+    left:12%;
+    transform:translate(-50%,-50%);
+
+}
+.test7{
+
+    width: 300px;
+}
+
+.Page3{
+    height: 4000px;
+}
+
+
+
+
+
+
+
+
+
+
+}
+	
+	
+
+    </style>
+    
+</head>
+<body>
+    <!----目錄開始.-->
+   <div class="fillWidth"></div>
+
+    <!---arrow and Logo Start.-->
+    <div class="Logo"><a href=""><img src="LOGO.png"></a></div>
+
+
+
+    <!---menu開始.-->
+    <div class="menu">
+        <div>
+            <a href="#bb"class="Portfolio">Portfolio.</a>
+        </div>
+        <div>
+            <a href="#aa"class="About">About.</a>
+        </div>
+    </div>
+
+
+    
+    <!--第二頁開始-->
+    <div class="Page2" id="aa">
+        <!--大標-->
+        <div class="first">
+            <h2 class="second">About.</h2>
+
+            <!--文字層start-->
+        </div>
+     
+
+        <div class="open">
+            <div class="Step0"> I'm currently immersed<br> in the fascinating worlds of <u>photography and programming</u>. From mastering composition to exploring various lighting techniques, my goal is to convey emotions and create visually compelling narratives.</div>
+            <div class="fb"><a href="https://www.facebook.com/profile.php?id=100009148850986&locale=zh_TW"><img src="fb.webp"></a></div>
+            <div class="insta"><a href="https://www.instagram.com/4shinji_/"><img src="insta.webp"/></a></div>
+        </div>
+        </div>
+
+
+
+
+        <!--第三頁開始-->
+        <div class="Page3" id="bb">
+            <div class="PG3">
+                <div class="PG3-1">Portfolio.</div>
+            </div>
+            <div>
+                <div class="fb"><a href="https://www.facebook.com/profile.php?id=100009148850986&locale=zh_TW"><img src="fb.webp"></a></div>
+                <div class="insta"><a href="https://www.instagram.com/4shinji_/"><img src="insta.webp"/></a></div>
+                <div class="logo">
+                    <img src="1.jpg"  alt="市場魚販" width="500" class="test">
+                  </div>
+                  <div class="H">
+                    <div class="pic2">
+                        <img src="2.jpg"  alt="樹" width="500" class="test1" >
+                  </div>
+                  <div class="pic3">
+                    <img src="3.jpg"  alt="便當店" width="500" class="test2" >
+              </div>
+              <div class="pic4">
+                <img src="4.jpg"  alt="濁水溪" width="500"  class="test3">
+          </div>
+          <div class="pic5">
+            <img src="5.jpg"  alt="Ktown" width="500" class="test4" >
+      </div>
+      <div class="pic6">
+        <img src="6.jpg"  alt="監視樹" width="500" class="test5" >
+  </div>
+  <div class="pic7">
+    <img src="7.jpg"  alt="教堂" width="500"  class="test6">
+</div>  
+<div class="pic8">
+    <img src="8.jpg"  alt="樹枝" width="500"  class="test7">
+</div>  
+
+
+
+
+
+
+<!---UPBOTTOM--->
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+
+</script>
+
+</body>
+</html >
